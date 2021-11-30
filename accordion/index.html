@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        body{margin: 20px;}
+    </style>
+</head>
+<div>
+    <div class="container mt-3">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header bg-primary">
+                    <a class="btn text-white" data-bs-toggle="collapse" href="#collapseOne">
+                        <strong>A</strong>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <strong>Ahmed Saber Fathy</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-primary">
+                    <a class="collapsed btn text-white" data-bs-toggle="collapse" href="#collapseTwo">
+                        <strong>B</strong>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <strong>A Full Stack Web Developer</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-primary">
+                    <a class="collapsed btn text-white" data-bs-toggle="collapse" href="#collapseThree">
+                        <strong>C</strong>
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <strong>Who was born in Egypt</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./bootstrap.bundle.min.js"></script>
+</html>
