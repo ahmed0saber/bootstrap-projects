@@ -1,0 +1,46 @@
+*{
+    font-family: "Bree Serif",sans-serif;
+}
+.navbar{
+    padding: 8px 12px;
+}
+.navbar-brand{
+    font-size: 22px;
+}
+.navbar-text a, footer a{
+    text-decoration: none;
+}
+#home{
+    background: #f2f2f2 url(../images/home.jpg) no-repeat top left;
+    background-size: cover;
+    height: 100vh;
+}
+.onImg{
+    background-color: #12121259;
+    width: fit-content;
+}
+.icons li a{
+    margin: 8px;
+    font-size: 30px;
+    color: #f2f2f2;
+}
+.icons li a:hover{
+    color: #c3c3c3;
+}
+.myPic{
+    width: 100%;
+}
+.hidden{
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.project:hover .hidden{
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    #home{
+        background: #f2f2f2 url(../images/home2.jpg) no-repeat top left;
+        background-size: cover;
+    }
+}
