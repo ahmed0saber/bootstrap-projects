@@ -76,56 +76,63 @@
                     <h1>Skills :-</h1>
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-lg-4 container-md p-1">
-                            <div class="p-4 border bg-light text-dark rounded">
-                                <h4>HTML5</h4>
+                            <div class="p-4 border bg-light text-dark rounded d-flex align-items-center">
+                                <h4>HTML5 &nbsp;</h4>
+                                <img src="./images/skills/html.png" class="skill-img">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 container-md p-1">
-                            <div class="p-4 border bg-light text-dark rounded">
-                                <h4>CSS3</h4>
+                            <div class="p-4 border bg-light text-dark rounded d-flex align-items-center">
+                                <h4>CSS3 &nbsp;</h4>
+                                <img src="./images/skills/css.png" class="skill-img">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-4 container-md p-1">
-                            <div class="p-4 border bg-light text-dark rounded">
-                                <h4>JavaScript(ES6)</h4>
+                            <div class="p-4 border bg-light text-dark rounded d-flex align-items-center">
+                                <h4>JavaScript(ES6) &nbsp;</h4>
+                                <img src="./images/skills/js.jpg" class="skill-img">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6 container-md p-1">
-                            <div class="p-4 border bg-light text-dark rounded">
-                                <h4>jQuery</h4>
+                            <div class="p-4 border bg-light text-dark rounded d-flex align-items-center">
+                                <h4>ElectronJS &nbsp;</h4>
+                                <img src="./images/skills/electron.png" class="skill-img">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6 container-md p-1">
-                            <div class="p-4 border bg-light text-dark rounded">
-                                <h4>Bootstrap</h4>
+                            <div class="p-4 border bg-light text-dark rounded d-flex align-items-center">
+                                <h4>Bootstrap &nbsp;</h4>
+                                <img src="./images/skills/bootstrap.png" class="skill-img">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6 container-md p-1">
-                            <div class="p-4 border bg-light text-dark rounded">
-                                <h4>Sass</h4>
+                            <div class="p-4 border bg-light text-dark rounded d-flex align-items-center">
+                                <h4>Sass &nbsp;</h4>
+                                <img src="./images/skills/sass.png" class="skill-img">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6 container-md p-1">
-                            <div class="p-4 border bg-light text-dark rounded">
-                                <h4>ElectronJS</h4>
+                            <div class="p-4 border bg-light text-dark rounded d-flex align-items-center">
+                                <h4>jQuery &nbsp;</h4>
+                                <img src="./images/skills/jquery.png" class="skill-img">
                             </div>
                         </div>
                     </div>
                     <h1>Certificates :-</h1>
                     <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4 container-md p-1">
+                        <div class="col-sm-12 col-md-6 col-lg-6 container-md p-1">
                             <div class="p-4 border bg-light text-dark rounded">
                                 <h4>SoloLearn certified Full Stack Web Developer</h4>
                                 <p>HTML, CSS, jQuery, PHP, Responsive Web Design, Coding For Marketers.</p>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 container-md p-1">
+                        <div class="col-sm-12 col-md-6 col-lg-6 container-md p-1">
                             <div class="p-4 border bg-light text-dark rounded">
                                 <h4>FreeCodeCamp certified Frontend Web Developer</h4>
                                 <p>Responsive Web Design, JavaScript Algorithm And Data Structure.</p>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-4 container-md p-1">
+                        <div class="col-sm-12 col-md-12 col-lg-12 container-md p-1">
                             <div class="p-4 border bg-light text-dark rounded">
                                 <h4>ShiyarAcademy certified Web Designer</h4>
                                 <p>HTML, CSS</p>
@@ -138,7 +145,7 @@
     </div>
 
     <div id="projects" class="container-fluid p-3">
-        <h1 class="text-center">My Projects</h1>
+        <h1 class="text-center projects-header">My Projects</h1>
         <div class="row" id="all_projects">
         </div>
     </div>
@@ -146,21 +153,24 @@
     <div id="contact" class="container-fluid px-2 py-3">
         <h1 class="text-center">Contact Me</h1>
         <form action="/action_page.php" class="container-fluid border shadow-sm rounded bg-light p-3">
-            <div class="mb-3 mt-3">
-                <label for="name" class="form-label">Enter your name:</label>
+            <label for="name" class="form-label">Enter your name:</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text fa fa-user" id="basic-addon1"></span>
+                </div>
                 <input type="text" class="form-control" placeholder="Name" id="name">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Enter your message:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
             </div>
-            <button type="submit" class="btn btn-success px-5">Send</button>
+            <button type="submit" class="btn btn-success px-5"><i class="fa fa-paper-plane"></i> Send</button>
         </form>
     </div>
     
     <footer>
         <div class="text-center p-3 bg-light border-top">
-            © 2021 Copyright:
+            &copy; 2021 Copyright:
             <a class="text-reset fw-bold" href="#">Ahmed Saber</a>
         </div>
     </footer>
