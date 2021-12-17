@@ -2,8 +2,8 @@
     [
         {
             "id": "1",
-            "title": "Tic Tac Toe Online",
-            "description": "A xo game where you can play vs easy/hard bot. You can also play vs local/online player. Chat with people, invite them, win more games and rank up. Backend by Ahmed Yasser.",
+            "title": "XO Online",
+            "description": "XO game where you can play vs easy/hard bot. vs local/online player. Chat with people, invite them, win more games and rank up. Backend by Ahmed Yasser.",
             "url": "https://xo-online.herokuapp.com/",
             "img": "./images/projects/xo.png"
         },
