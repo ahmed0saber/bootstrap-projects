@@ -1,0 +1,34 @@
+*{
+    font-family: "Bree Serif",sans-serif;
+}
+.navbar{
+    padding: 8px 12px;
+}
+.navbar-brand{
+    font-size: 22px;
+}
+.navbar-text a, footer a{
+    text-decoration: none;
+}
+#home{
+    background: #f2f2f2 url(../images/cover.jpg) no-repeat top left;
+    background-size: cover;
+    height: calc(100vh - 48px);
+}
+.onImg h1{
+    color: #DABE59;
+    font-size: calc(1.8rem + 2.5vw);
+    font-weight: bold;
+    -webkit-text-stroke: 0.1px #000;
+    text-shadow: 0px 0px 6px #000;
+}
+.onImg .border{
+    width: fit-content;
+    padding: 2px;
+}
+.onImg .border button{
+    padding: 10px 30px;
+}
+.pic{
+    width: 100%;
+}
