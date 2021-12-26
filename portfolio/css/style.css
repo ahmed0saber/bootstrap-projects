@@ -105,24 +105,24 @@ body{
     top: 50%;
     right: 25px;
     font-size: 40px;
-    opacity: 0.85;
+    opacity: 0.7;
     color: #0a64ad;
     animation: arrow 1s infinite;
 }
 @keyframes arrow{
     0%{
         right: 42px;
-        opacity: 0.85;
+        opacity: 0.7;
         color: #0a64ad;
     }
     50%{
         right: 22px;
-        opacity: 0.7;
+        opacity: 0.85;
         color: #00589E;
     }
     100%{
         right: 42px;
-        opacity: 0.85;
+        opacity: 0.7;
         color: #0a64ad;
     }
 }
