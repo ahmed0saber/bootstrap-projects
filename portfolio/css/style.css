@@ -64,14 +64,13 @@ body{
 .project-container{
     background-color: #DEE2E6;
     padding: 1px;
-    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .project{
     min-height: 300px;
     transition-duration: 0.4s;
     background: #f2f2f2 no-repeat left top;
     background-size: cover;
-    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
 }
 .project:hover .hidden{
     opacity: 1;
@@ -89,6 +88,15 @@ body{
 .skill-img{
     height: 50px;
 }
+.scroller{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #ddd;border: none;}
+::-webkit-scrollbar-track:hover {background: #bbb;}
+::-webkit-scrollbar-thumb {background: #0a64ad;}
+::-webkit-scrollbar-thumb:hover {background: #00589E;}
 
 @media screen and (max-width: 800px) {
     #home{

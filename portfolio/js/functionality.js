@@ -15,7 +15,7 @@ fetch('data.json')
                         </div>
                     </div>
                 </div>
-                </div>`;
+            </div>`;
             }
         }
     );
