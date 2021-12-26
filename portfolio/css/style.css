@@ -96,7 +96,7 @@ body{
     overflow-y: hidden;
 }
 .scroller::-webkit-scrollbar {height: 10px;}
-.scroller::-webkit-scrollbar-track {background: #ddd;border: none;}
+.scroller::-webkit-scrollbar-track {background: #ccc;border: none;}
 .scroller::-webkit-scrollbar-track:hover {background: #bbb;}
 .scroller::-webkit-scrollbar-thumb {background: #0a64ad;}
 .scroller::-webkit-scrollbar-thumb:hover {background: #00589E;}
