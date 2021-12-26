@@ -110,15 +110,20 @@ body{
     animation: arrow 1s infinite;
 }
 @keyframes arrow{
-    from{
+    0%{
         right: 42px;
         opacity: 0.85;
         color: #0a64ad;
     }
-    to{
+    50%{
         right: 22px;
         opacity: 0.7;
         color: #00589E;
+    }
+    100%{
+        right: 42px;
+        opacity: 0.85;
+        color: #0a64ad;
     }
 }
 
