@@ -1,9 +1,9 @@
 *{
     font-family: "Bree Serif",sans-serif;
 }
-body{
+/*body{
     overflow-x: hidden;
-}
+}*/
 .navbar{
     padding: 8px 12px;
 }
@@ -95,7 +95,7 @@ body{
     overflow-x: scroll;
     overflow-y: hidden;
 }
-.scroller::-webkit-scrollbar {height: 10px;}
+.scroller::-webkit-scrollbar {height: 12px;}
 .scroller::-webkit-scrollbar-track {background: #ccc;border: none;}
 .scroller::-webkit-scrollbar-track:hover {background: #bbb;}
 .scroller::-webkit-scrollbar-thumb {background: #0a64ad;}
@@ -107,6 +107,8 @@ body{
     font-size: 40px;
     opacity: 0.7;
     color: #0a64ad;
+    text-shadow: 0px 0px 2px #000;
+    -webkit-text-stroke: 1px #000;
     animation: arrow 1s infinite;
 }
 @keyframes arrow{
@@ -126,10 +128,16 @@ body{
         color: #0a64ad;
     }
 }
+.MyVoice{
+    width: 100%;
+}
 
 @media screen and (max-width: 800px) {
     #home{
         background: #f2f2f2 url(../images/home2.jpg) no-repeat top left;
         background-size: cover;
+    }
+    .scroller::-webkit-scrollbar{
+        height: 6px;
     }
 }
