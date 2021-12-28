@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "My Goals In 2022",
+        "url": "./blog.html?blog=0",
+        "img": "./images/blog1.png",
+        "description": "<p>In this blog, I will be dicussing the goals I want to achieve in 2022.</p><p>So expect me to talk about :-</p><ul><li>Skills I need to improve.</li><li>Technologies I want to learn.</li><li>Projects I'm willing to create.</li><li>Teams I'm seeking to work with.</li></ul>",
+        "content": "<h3>Skills I need to improve</h3><p>To Be Continued.</p><h3>Technologies I want to learn</h3><p>To Be Continued.</p><h3>Projects I'm willing to create</h3><p>To Be Continued.</p><h3>Teams I'm seeking to work with</h3><p>To Be Continued.</p>"
+    },
+    {
+        "id": "2",
+        "title": "Coming Soon",
+        "url": "./blog.html?blog=1",
+        "img": "./images/blog2.png",
+        "description": "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias minus sequi laboriosam dolor facere delectus odit ad consectetur maxime quibusdam.</p>",
+        "content": "<h3>To Be Continued...</h3>"
+    },
+    {
+        "id": "3",
+        "title": "Coming Soon",
+        "url": "./blog.html?blog=2",
+        "img": "./images/blog3.png",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illum doloribus modi nihil libero quibusdam repellendus enim optio animi exercitationem.</p>",
+        "content": "<h3>To Be Continued...</h3>"
+    }
+]
