@@ -28,9 +28,8 @@ function show_all(){
         document.getElementById("js").style.display="block";
         document.getElementById("result").style.display="block";
     }
-    if(window.innerWidth<992)
+    if(window.innerWidth<992 && document.getElementById("html").style.display=="block")
     {
-        document.getElementById("html").style.display="block";
         document.getElementById("css").style.display="none";
         document.getElementById("js").style.display="none";
         document.getElementById("result").style.display="none";
