@@ -1,5 +1,5 @@
 :root{
-    --pri: "#f7f7f7";
+    --pri: "#f2f2f2";
     --sec: "#08080822";
     --font: "#080808";
 }
@@ -14,28 +14,6 @@ a{
 }
 h1{
     color: var(--font);
-}
-nav{
-    background-color: var(--pri);
-    border-bottom: 1px solid var(--sec);
-}
-nav a{
-    color: var(--font);
-}
-nav a:hover{
-    color: teal;
-}
-.nav-link{
-    color: var(--font);
-}
-.nav-link:hover{
-    color: teal;
-}
-.navbar-toggler{
-    color: var(--font);
-    background-color: var(--sec);
-    padding: 6px 18px;
-    font-size: 26px;
 }
 footer{
     background-color: var(--pri);

@@ -28,10 +28,11 @@ function send(){
     document.getElementById("msg").value = "";
 }
 /*     THEMES     */
+var nav = document.getElementById("nav");
 var current = 0;
 var themes = [{
   "id": "0",
-  "pri": "#f7f7f7",
+  "pri": "#f2f2f2",
   "sec": "#08080822",
   "font": "#080808"
 },
@@ -50,7 +51,20 @@ function theme(){
     document.querySelector(':root').style.setProperty('--font',themes[current].font);
 }
 function changeTheme(){
-    if(current==themes.length-1){current=0;}else{current+=1;}
+    if(current==themes.length-1){
+      current=0;
+      nav.classList.add("navbar-light");
+      nav.classList.add("bg-light");
+      nav.classList.remove("navbar-dark");
+      nav.classList.remove("bg-dark");
+    }else
+    {
+      current+=1;
+      nav.classList.remove("navbar-light");
+      nav.classList.remove("bg-light");
+      nav.classList.add("navbar-dark");
+      nav.classList.add("bg-dark");
+    }
     localStorage.setItem("theme", current);
     theme();
 }
