@@ -30,17 +30,17 @@ function send(){
 /*     BACKGROUND ANIMATION     */
 var canvas = document.createElement("canvas");
 var width = canvas.width = window.innerWidth;
-var height = canvas.height = window.innerHeight;
+var height = canvas.height = 300;
 document.getElementsByClassName("con")[0].appendChild(canvas);
 var gl = canvas.getContext('webgl');
 
 var mouse = {x: 0, y: 0};
 
-var numMetaballs = 25;
+var numMetaballs = 20;
 var metaballs = [];
 
 for (var i = 0; i < numMetaballs; i++) {
-  var radius = Math.random() * (window.innerWidth/18) + 10;
+  var radius = Math.random() * (window.innerWidth/20) + 10;
   metaballs.push({
     x: Math.random() * (width - 2 * radius) + radius,
     y: Math.random() * (height - 2 * radius) + radius,
@@ -87,7 +87,7 @@ gl_FragColor = vec4(mix(vec3(x / WIDTH, y / HEIGHT, 1.0), vec3(0, 0, 0), max(0.0
 return;
 }
 
-gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+gl_FragColor = vec4(0.0, 0.0, 0.0, 0.08);
 }
 
 `;
