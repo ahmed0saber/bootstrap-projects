@@ -7,8 +7,8 @@ fetch('data.json')
             for(var i=0; i<projects.length; i++){
                 document.getElementById("all_projects").innerHTML+=`<div class="col-sm-12 col-md-6 col-lg-4 p-1">
                 <div class="project-container">
-                    <div class="p-4 bg-light text-dark project d-flex align-items-end" style="background-image: url('${projects[i].img}')">
-                        <div class="container-fluid bg-light p-2 rounded border hidden">
+                    <div class="p-4 project d-flex align-items-end" style="background-image: url('${projects[i].img}')">
+                        <div class="container-fluid p-2 rounded hidden">
                             <h1>${projects[i].title}</h1>
                             <p>${projects[i].description}</p>
                             <a href="${projects[i].url}" target="_blank" class="btn btn-primary px-4">Try Now</a>
@@ -26,6 +26,33 @@ function send(){
     window.open("https://api.whatsapp.com/send?phone=+201208611892&text=Hi, Ahmed! My name is "+name+", I want to tell you that '"+msg+"'");
     document.getElementById("name").value = "";
     document.getElementById("msg").value = "";
+}
+/*     THEMES     */
+var current = 0;
+var themes = [{
+  "id": "0",
+  "pri": "#f7f7f7",
+  "sec": "#08080822",
+  "font": "#080808"
+},
+{
+  "id": "1",
+  "pri": "#080808",
+  "sec": "#f7f7f722",
+  "font": "#e3e3e3"
+}
+];
+if(localStorage.getItem("theme")){current = parseInt(localStorage.getItem("theme"));}else{current = 0;}
+theme();
+function theme(){
+    document.querySelector(':root').style.setProperty('--pri',themes[current].pri);
+    document.querySelector(':root').style.setProperty('--sec',themes[current].sec);
+    document.querySelector(':root').style.setProperty('--font',themes[current].font);
+}
+function changeTheme(){
+    if(current==themes.length-1){current=0;}else{current+=1;}
+    localStorage.setItem("theme", current);
+    theme();
 }
 /*     BACKGROUND ANIMATION     */
 var canvas = document.createElement("canvas");

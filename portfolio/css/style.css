@@ -1,9 +1,46 @@
+:root{
+    --pri: "#f7f7f7";
+    --sec: "#08080822";
+    --font: "#080808";
+}
 *{
     font-family: "Bree Serif",sans-serif;
 }
-/*body{
-    background-color: #000;
-}*/
+body{
+    background-color: var(--pri);
+}
+a{
+    cursor: pointer;
+}
+h1{
+    color: var(--font);
+}
+nav{
+    background-color: var(--pri);
+    border-bottom: 1px solid var(--sec);
+}
+nav a{
+    color: var(--font);
+}
+nav a:hover{
+    color: teal;
+}
+.nav-link{
+    color: var(--font);
+}
+.nav-link:hover{
+    color: teal;
+}
+.navbar-toggler{
+    color: var(--font);
+    background-color: var(--sec);
+    padding: 6px 18px;
+    font-size: 26px;
+}
+footer{
+    background-color: var(--pri);
+    color: var(--font);
+}
 .btn{
     background-color: rgb(16, 158, 158);
     font-size: 17px;
@@ -99,7 +136,8 @@
 	}
 }
 .semi-transparent{
-    background-color: #F8F9FAE2;
+    background-color: var(--sec);
+    color: var(--font);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
 }
@@ -117,19 +155,19 @@
     transform: scale(1.04);
 }
 .skill, .cert{
-    border: 2px solid #DEE2E6;
-    background-color: #F8F9FA92;
+    border: 2px solid #0000;
     transition-duration: 0.4s;
+    background-color: var(--sec);
+    color: var(--font);
 }
 .goals{
-    border: 2px solid #DEE2E6;
+    border: 2px solid #DEE2E600;
     transition-duration: 0.4s;
 }
 .serv{
-    background: linear-gradient(360deg, #F8F9FA 0%, #F8F9FA 50%, #c9fff2 50%, #c9fff2 100%);
+    background: linear-gradient(360deg, var(--sec) 0%, var(--sec) 50%, #c9fff255 50%, #c9fff255 100%);
 	background-size: 400% 400%;
     background-position: 100% 100%;
-    border: 1px solid #DEE2E6;
     transition-duration: 1s;
 }
 .serv:hover{
@@ -138,7 +176,7 @@
 .serv h3{
     border-left: 4px solid #098d8d;
     border-radius: 2px;
-    color: #005858;
+    color: #007c7c;
 }
 .goals{
     display: flex;
@@ -151,6 +189,8 @@
 .hidden{
     opacity: 0;
     transition-duration: 0.4s;
+    color: var(--font);
+    background-color: var(--pri);
 }
 #projects{
     position: relative;
@@ -240,7 +280,7 @@
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     font-size: 25px;
-    color: #080808;
+    color: var(--font);
     text-align: center;
 }
 
